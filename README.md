@@ -1,4 +1,4 @@
-# guess-the-number-game
+# Guess-the-number-game
 This is a JavaScript program (Guess the number) by using some basic Js methods
 => Guess the number
 write a javascript program to generate a random number and store it in a variable, the program then takes a number from user and check whether their guess was lesser,
