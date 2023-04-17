@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the number</title>
+  </head>
+  <body>
+    <script>
+      // Guess the number
+      // write a javascript program to generate a random number and store it in a variable, the program then takes a number from user and check whether their guess was lesser , equal or greater than that random number.
+      // 100 - no of guesses is the score of that person . the program is expected to terminate once it gets the right answer
+
+      let randomNumber = Math.floor(Math.random() * 10) + 1;
+      let chance = 0;
+      let guess;
+      guess = +prompt("Enter any number between 1 and 10 ");
+      while (guess !== randomNumber) {
+        if (guess === randomNumber) {
+          break;
+        } else if (guess > randomNumber) {
+          alert("You Number is still greater than original !!!");
+          guess = +prompt("Enter any number between 1 and 10 ");
+        } else {
+          alert("You Number is still smaller than original !!!");
+          guess = +prompt("Enter any number between 1 and 10 ");
+        }
+        chance++;
+      }
+      alert("You Won! You cracked it");
+      alert(`You scored ${100 - chance} points.`);
+    </script>
+  </body>
+</html>
